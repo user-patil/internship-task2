@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polling App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#poll-section">Poll</a></li>
+            <li><a href="#results-section">Results</a></li>
+        </ul>
+    </nav>
+
+    <!-- Poll Section -->
+    <section id="poll-section">
+        <h2>Vote on Our Poll!</h2>
+        <form id="poll-form">
+            <label>
+                <input type="radio" name="vote" value="option1"> Option 1
+            </label>
+            <label>
+                <input type="radio" name="vote" value="option2"> Option 2
+            </label>
+            <label>
+                <input type="radio" name="vote" value="option3"> Option 3
+            </label>
+            <button type="submit">Submit Vote</button>
+        </form>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results-section">
+        <h2>Real-Time Results</h2>
+        <div id="poll-results">
+            <p>Option 1: <span id="option1-votes">0</span> votes</p>
+            <p>Option 2: <span id="option2-votes">0</span> votes</p>
+            <p>Option 3: <span id="option3-votes">0</span> votes</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
